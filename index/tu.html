@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="../estilos/tu.css">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,500&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <div id="cuerpo">
+           
+            <div class="titulo">
+                <h1>¿ Por que Tu ?</h1>
+            </div>
+
+            <div class="botones">
+
+                <button   id="mostrarCarta">Mostrar carta</button>
+                <a  href="../index/novio.html" id="siguiente">Siguiente Pagina</a>
+    
+            </div>
+            <div id="carta" class="oculto">
+                <div class="carta-frontal">
+                    <h1 class="titulo">Querida Ale,</h1>
+                    <p>Desde que nos conocimos, sabía que eras tú, la chica que siempre había estado buscando. Me encantó tu forma de ser, tu sonrisa, tu inteligencia, tu sentido del humor y la manera en que iluminas mi día con tu sola presencia. Cada vez que estoy contigo, siento que estoy en el lugar correcto, y no puedo dejar de pensar en ti incluso cuando estás lejos. Eres la persona más maravillosa que he conocido, y espero poder pasar muchos más momentos especiales contigo en el futuro.  </p>
+                    <p>Te vi y supe que eras la persona con la que quiero compartir mi vida. Quiero que seas tú la chica que vea cumplir mis metas, la persona que esté a mi lado en las buenas y las malas. Eres la persona que me inspira a ser mejor cada día, que me motiva a seguir adelante cuando las cosas se ponen difíciles. No importa lo que venga, sé que juntos podemos enfrentar cualquier obstáculo y salir victoriosos. </p>
+                    <p>Con todo mi amor,</p>
+                    <p>Erick</p>
+                    <button id="cerrarCarta">X</button>
+
+                </div>
+                
+            </div>
+        </div>
+    </main>
+
+      <script>
+        const miBoton = document.querySelector('#mostrarCarta');
+const carta = document.querySelector('#carta');
+
+const salir = document.querySelector('#cerrarCarta');
+
+miBoton.addEventListener('click', () => {
+  carta.classList.toggle('abierto');
+});
+
+
+salir.addEventListener('click', () => {
+    carta.classList.remove('abierto');
+});
+
+      </script>
+        <audio id="music" src="../imagenes/musica/musica03.mp3"  autoplay loop>
+
+</body>
+</html>

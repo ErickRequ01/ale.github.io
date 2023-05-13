@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../estilos/novia.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <main>
+    <div>
+        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/108463/rosenoleaf.png">
+
+
+
+        <img class ="falling-leaf" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/108463/leaf.png">
+    </div>
+    <div  class="texto">  
+        <p class="cursor typewriter-animation" style="font-size: 40px;">Gracias por tu tiempo, Te quiero <img style="width: 50px;" src="../imagenes/R.png"></p>
+        <div class="collage-container">
+            <div class="collage">
+                <!-- Top Set -->
+                <a href="#">
+                    <div class="video-container">
+                        <video  muted="true"class="video" src="../imagenes/gracias/video.mp4"></video>
+                      </div>
+                                      </a>
+                <a href="#">
+                        <img src="../imagenes/gracias/img1.jpeg" alt="Collage Photo">
+                </a>
+                
+                <a href="#">
+                    <img src="../imagenes/gracias/img2.jpeg" alt="Collage Photo">
+                </a>
+                <a href="#">
+                    <img src="../imagenes/gracias/img3.JPG" alt="Collage Photo">
+                </a>
+                <a href="#">
+                    <img src="../imagenes/gracias/img4.jpeg" alt="Collage Photo">
+                </a>
+                <a href="#">
+                    <img src="../imagenes/gracias/img5.jpeg" alt="Collage Photo">
+                </a>
+                <a href="#">
+                    <img src="../imagenes/cita/IMG_3163.JPEG" alt="Collage Photo">
+                </a>
+                <a href="#">
+                    <img src="../imagenes/gracias/img7.jpeg" alt="Collage Photo">
+                </a>
+                <a href="#">
+                    <img src="../imagenes/gracias/img8.JPG" alt="Collage Photo">
+                </a>
+                <a href="#">
+                    <img src="../imagenes/cita/IMG_3162.JPEG" alt="Collage Photo">
+                </a>
+            </div>
+        </div>
+    </div>
+   </main>
+    <script>
+        const videoContainer = document.querySelector('.video-container');
+const video = document.querySelector('.video');
+
+videoContainer.addEventListener('mouseenter', () => {
+  video.play();
+});
+
+videoContainer.addEventListener('mouseleave', () => {
+  video.pause();
+});
+
+    </script>
+            <audio id="music" src="../imagenes/musica/musica04.mp3"  autoplay loop>
+
+</body>
+</html>
