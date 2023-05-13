@@ -1,0 +1,140 @@
+/* Estilo del botón */
+
+   
+*{
+    text-align: justify;
+    box-sizing: border-box;
+    font-family: 'Playfair Display', serif;
+    cursor: url("../imagenes/cursor/Hello\ Kitty\ normal\ select.cur"), auto;
+
+}
+.oculto{
+    display: none;
+}
+.titulo{
+    font-size: 28px;
+}
+#mostrarCarta {
+    background-color: #ffcccc;
+    border: none;
+    color: white;
+    padding: 20px 50px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border-radius: 10px;
+    cursor: url("../imagenes/cursor/pointer.cur"), auto;
+    transition: background-color 0.3s ease;
+}
+
+  #cerrarCarta {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 15px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #333;
+    border: none;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    text-align: center;
+  }
+
+  
+  #mostrarCarta:hover {
+    background-color: #ea9696;
+  }
+/* Estilo de la carta */
+#carta {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 600px;
+    height: 700px;
+
+    transition: transform 1s;
+}
+
+
+.carta-frontal {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #f8e7d6;
+
+    color: #333;
+    padding: 20px 25px;
+    box-sizing: border-box;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.2em;
+    line-height: 1.5;
+    backface-visibility: hidden;
+    z-index: -3;
+
+}
+
+
+#carta.abierto {
+    display: block;
+}
+
+#carta.salir {
+    transform: translate(-50%, -150%);
+    transition: transform 1s;}
+
+
+
+ #siguiente{
+    background-color: #ffcccc;
+    border: none;
+    color: white;
+    padding: 20px 50px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border-radius: 10px;
+    cursor: url("../imagenes/cursor/pointer.cur"), auto;
+    transition: background-color 0.3s ease;
+ }
+ #siguiente:hover {
+    background-color: #ea9696;
+    
+  }
+ 
+  .botones{
+  
+    justify-content: center;
+    align-items: center;
+}
+.botones button{
+    
+  margin: 0 10px;
+}
+#cuerpo{
+    height: 90vh;
+    width:  99vw;
+    display: flex;
+    flex-direction: column;
+text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.titulo h1{
+    margin: 100px;
+    font-size: 50px;
+    text-align: center;
+}

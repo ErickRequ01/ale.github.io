@@ -1,1 +1,173 @@
 
+*{
+    cursor: url("../imagenes/cursor/Hello\ Kitty\ normal\ select.cur"), auto;
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+video {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+/* Estilos para el contenido del banner */
+
+.container {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+   
+}
+
+
+h1 {
+    font-size: 4rem;
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    font-size: 1.5rem;
+    margin-top: 20px;
+}
+
+/* Estilos para el encabezado */
+
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    background-color: #f7f7f7;
+    color: #333;
+    background-color: #fed6e3; /* Color rosa claro */
+
+}
+audio {
+    display: none;
+}
+
+.indice{
+    display: flex;
+    align-items: center;
+    padding: 0 40px;
+
+}
+    
+
+ul {
+    
+    
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    
+    font-size: 50px;
+    background-color: #fff;
+    transition: background-color 0.2s ease;
+}
+
+li:hover {
+    background-color: #f5f5f5;
+    cursor: url("../imagenes/cursor/Hello\ Kitty\ normal\ select.cur"), auto;
+}
+
+a {
+    background-color: #fed6e3; /* Color rosa claro */
+    cursor: initial;
+    color: #333;
+    text-decoration: none;
+    transition: color 0.2s ease;
+    cursor: url("../imagenes/cursor/Hello\ Kitty\ normal\ select.cur"), auto;
+
+}
+span{
+    margin: 0;
+    padding: 0;
+    cursor: url("../imagenes/cursor/pointer.cur"), auto;
+
+}
+span:hover {
+
+    color: #ed164fad;
+}
+
+.content {
+    
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.section {
+    height: 100vh;
+
+    margin-top: 30px;
+    padding: 30px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+
+.section h2 {
+    font-size: 24px;
+    margin-top: 0;
+    margin-bottom: 50px;
+}
+
+.section p {
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+.estilos-indice{
+    display: flex;
+    align-items: center;
+}
+.gatito img{
+    width: 50px;
+    margin-top: 30px;
+    margin-right: 10px;
+}
+.titulo{
+position: relative;
+bottom: 70px;
+ font-weight: bold;
+  margin: 20px 40px;
+  padding: 0;
+  font-size: 50px;
+  font-weight: 300;
+  color: #f8f1f3;
+  text-shadow: 1px 1px 0px #ed164f, 
+               2px 2px 0px #ed164f,
+               3px 3px 0px #ed164f,
+               4px 4px 0px #ed164f,
+               5px 5px 0px #ed164f;
+  letter-spacing: 2px;
+  animation: aparecer 10s ease-in-out infinite;
+}
+@keyframes aparecer {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
